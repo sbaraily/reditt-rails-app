@@ -1,2 +1,6 @@
-<h1>Suns#show</h1>
-<p>Find me in app/views/suns/show.html.erb</p>
+<h1><%= @sub.name %></h1>
+
+<%= link_to 'view Topics', sun_topics_path(@sub) %>
+<%= link_to 'edit sun', edit_sun_path(@sub) %>
+<%= link_to 'delete sun', @sub, method: :delete %>
+

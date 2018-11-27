@@ -1,2 +1,7 @@
-<h1>Suns#index</h1>
-<p>Find me in app/views/suns/index.html.erb</p>
+<h2> Viewing All suns </h1>
+
+<%= link_to 'Create new sun', new_sun_path %>
+
+<% @suns.each do |sun| %>
+    <%= link_to sun.name, sun %>
+<% end %>
